@@ -37,7 +37,7 @@ function App() {
 		setUseSelected(e);
 	}
 	const renderList = list.filter(
-		(item) => useSelected === "" || useSelected === item.description
+		(item) => useSelected === "" || item.description.includes(useSelected)
 	);
 
 	/////
